@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(253, 212, 218);
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    border: 1px solid hotpink;
+    margin: 2rem auto;
+}
+
+.container > div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#pink {
+    background-color: pink;
+    position: relative;
+    top: -300px;
+    animation: pink 3s ease-in-out forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pink {
+    100% {top: 0;}
+}
+
+#yellow {
+    background-color: lightyellow;
+    animation: yellow 5s ease-in-out forwards;
+    opacity: 0;
+    animation-iteration-count: infinite;
+}
+@keyframes yellow {
+    100% {opacity: 1;}
+}
+
+#blue {
+    background-color: lightblue;
+    animation: blue 3s ease-in-out forwards;
+    animation-iteration-count: infinite;
+    transform: rotateX(180deg);
+}
+
+@keyframes blue {
+    50% {transform: rotate(180deg);}
+}
+
+.footer {
+    text-align: center;
+}
